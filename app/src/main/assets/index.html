@@ -1,0 +1,26 @@
+<html>
+<script language="JavaScript">
+function sayHelloFromJS(value) {
+  document.getElementById("namefromAndroid").value =   value;
+}
+
+function setHtml(){
+  var HTML = ""+document.getElementById("namefromjs").value;
+  window.HTMLOUT.showHTML(HTML);
+}
+
+function doAlert() {
+ alert("JavaScript says: Hello Android !!! How are you?");
+
+}
+</script>
+</head>
+<body>
+<input type="button" accept="image/*;capture=camera">
+<p> Enter your name here <input type="text" id="namefromjs" />
+<p> <input type="button" onclick= "setHtml()" value="Set Name in Android">
+<p> Name from Android is <input type="text" id="namefromAndroid" />
+
+<p> Button Click <input type="button" value="Click me" id="buttonClick" onclick= "doAlert()" />
+</body>
+</html>
